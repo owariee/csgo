@@ -1,0 +1,23 @@
+Video
+Color Mode: 				Computer Monitor
+Brightness: 				110% (2.2)
+Aspect Ratio: 				Native (16:9)
+Resolution: 				Native (1920x1080)
+Display Mode: 				Fullscreen
+Laptop Power Savings: 			Disabled
+
+Advanced Video
+Global Shadow Quality:			Low
+Model / Texture Detail:			Auto: High
+Texture Streaming:			Disabled
+Effect Detail:				Low
+Shader Detail:				Low
+Boost Player Contrast:			Enabled
+Multicore Rendering:			Enabled
+Multisampling Anti-Aliasing Mode: 	4X MSAA
+FXAA Anti-Aliasing:			Disabled
+Texture Filtering Mode: 		Bilinear
+Wait for Vertical Sync: 		Disabled
+Motion Blur: 				Disabled
+Triple-Monitor Mode: 			Disabled
+Use Uber Shaders:			Auto: Enabled
