@@ -16,7 +16,7 @@ Boost Player Contrast:			Enabled
 Multicore Rendering:			Enabled
 Multisampling Anti-Aliasing Mode: 	4X MSAA
 FXAA Anti-Aliasing:			Disabled
-Texture Filtering Mode: 		Bilinear
+Texture Filtering Mode: 		Anisotropic 16x
 Wait for Vertical Sync: 		Disabled
 Motion Blur: 				Disabled
 Triple-Monitor Mode: 			Disabled
