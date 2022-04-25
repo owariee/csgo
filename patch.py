@@ -40,12 +40,8 @@ class Config:
             for other_command_index in range(config.getCommandLength()):
                 other_command = config.getCommand(other_command_index)
                 if(self_command.areEqual(other_command) and other_command_index in unused_commands_index):
-
-                    if(other_command.getCommand() == "zoom_sensitivity_ratio_mouse"):
-                        print("cringe")
-                    
                     self.setCommand(self_command_index, other_command)
-                    unused_commands_index.remove(other_command_index-1)
+                    unused_commands_index.remove(other_command_index)
                     break
         for unused_command_index in unused_commands_index:
             unused_command = config.getCommand(unused_command_index)
@@ -63,7 +59,9 @@ class Config:
             for second_index in range(first_index+1, commandLength):
                 first_command = self.getCommand(first_index)
                 second_command = self.getCommand(second_index)
-                if(second_command.getFullCommand() < first_command.getFullCommand()):
+                if(first_command.getFullCommand() == "unbindall\n"):
+                    continue
+                if(second_command.getFullCommand() < first_command.getFullCommand() or second_command.getFullCommand() == "unbindall\n"):
                     self.setCommand(first_index, second_command)
                     self.setCommand(second_index, first_command)
 
@@ -143,7 +141,7 @@ def main():
     patch = Config("autoexec.cfg")
     vanilla.merge(patch)
     vanilla.sort()
-    vanilla.save("teste.cfg")
+    vanilla.save("config.cfg")
 
 if(__name__ == '__main__'):
     main()
