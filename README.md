@@ -28,7 +28,7 @@ This repository contains my personal Counter-Strike: Global Offensive configurat
 ## Launch Options
 Copy and paste into steam launch options:
 ```
--novid -tickrate 128
+-novid -tickrate 128 +exec autoexec.cfg
 ```
 
 ## Digital Vibrance
@@ -42,18 +42,36 @@ Copy and paste into steam launch options:
 ## Installation
 
 ### Windows
-Copy all .cfg files to:
+1. Enter in this directory, exclude everything and then copy all .cfg files from the repo:
 ```
 C:\Program Files(x86)\Steam\userdata\YOUR_ID3\730\local\cfg
 ```
 Where YOUR_ID3 is your account ID3.
+2. Put the launch options into CS:GO properties.
+3. Install VibrantGUI and set csgo.exe executable to 250%.
+4. Start CS:GO.
+5. Set video settings as described before.
+6. Enable developer console and set the console to be the "/" key.
+7. On console, type:
+```
+exec autoexec
+```
 
 ### Linux
-Simply clone the repo and then:
+1. Simply clone the repo and then:
 ```
 STEAM_ID3=YOUR_ID3 ./install.sh
 ```
 Where YOUR_ID3 is your account ID3.
+2. Put the launch options into CS:GO properties.
+3. Install VibrantLinux and set csgo_linux64 executable to be 250%.
+4. Start CS:GO.
+5. Set video settings as described before.
+6. Enable developer console and set the console to be the "/" key.
+7. On console, type:
+```
+exec autoexec
+```
 
 ## FAQ
 
